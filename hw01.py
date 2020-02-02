@@ -17,10 +17,11 @@ def verify_file ():
         raise Exception ('Sorry! The name is incorect.')
     
     ex = os.path.exists (file_name)
-    if ex==True:
+    if ex==False:
+        raise Exception ('Sorry! Your file does not exist!')
         print ('Congrats! Your file exists!')
     else:
-        raise Exception ('Sorry! Your file does not exist!')
+        print ('Congrats! Your file exists!')
     
 def calc_words ():
     verify_file ()
