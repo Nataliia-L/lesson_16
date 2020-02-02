@@ -10,11 +10,12 @@
 
 name = input ('Please, enter your full name: ')
 num_words = len (name.split (' '))
-if num_words == 2:
-    print ('Hello, ', name.title())
-else:
+if num_words != 2:
     raise Exception ('Please, enter correct name!')
-
+else:
+    print ('Hello, ', name.title())
+    
+    
 date_of_birth = input ('Please, enter the date of birth: ')
 if date_of_birth.isdecimal ()==False:
     raise Exception ('Please, enter correct date of birth!')
